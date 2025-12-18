@@ -3,8 +3,16 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Globe, Users, Heart, Lightbulb, Calendar, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Globe, Users, Heart, Lightbulb, Calendar, Mail, MapPin, ArrowRight, Instagram, ExternalLink } from "lucide-react";
 import logoUrl from "@assets/WhatsApp_Image_2025-12-16_at_20.08.07-removebg-preview_1766030566270.png";
+
+const registrationForms = [
+  { country: "Nepal", flag: "🇳🇵", url: "https://forms.gle/Zcfv2wBUTfKc4QPe9" },
+  { country: "Vietnam", flag: "🇻🇳", url: "https://forms.gle/KhEd8odffcvgBmLp9" },
+  { country: "Myanmar", flag: "🇲🇲", url: "https://forms.gle/e7muWxsHrXKn2RqQ9" },
+  { country: "Thailand", flag: "🇹🇭", url: "https://forms.gle/Y5ZmTJrRm1PoijC77" },
+  { country: "Japan", flag: "🇯🇵", url: "https://forms.gle/jzkesB7Gob14ukyQ6" }
+];
 
 const nationalChapters = [
   {
@@ -314,47 +322,85 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8" data-testid="card-contact-form">
-              <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
-              <form className="space-y-4">
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Name</label>
-                  <Input placeholder="Your name" data-testid="input-name" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Email</label>
-                  <Input type="email" placeholder="your@email.com" data-testid="input-email" />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Message</label>
-                  <Textarea placeholder="Tell us how you'd like to get involved..." rows={4} data-testid="textarea-message" />
-                </div>
-                <Button className="w-full" data-testid="button-submit-contact">Send Message</Button>
-              </form>
+          <div className="space-y-8">
+            {/* Registration Forms */}
+            <Card className="p-8 border-2" data-testid="card-member-registration">
+              <h3 className="text-2xl font-bold mb-6">Join as a Member</h3>
+              <p className="text-muted-foreground mb-6">
+                Register to become an official member of Global Science Navigators in your country. Complete the form for your chapter to get started!
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                {registrationForms.map((form) => (
+                  <a 
+                    key={form.country}
+                    href={form.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid={`link-register-${form.country.toLowerCase()}`}
+                  >
+                    <Button variant="outline" className="w-full justify-between" data-testid={`button-register-${form.country.toLowerCase()}`}>
+                      <span className="flex items-center gap-2">
+                        <span className="text-lg">{form.flag}</span>
+                        {form.country}
+                      </span>
+                      <ExternalLink className="w-3 h-3" />
+                    </Button>
+                  </a>
+                ))}
+              </div>
             </Card>
 
-            <div className="space-y-6">
-              <Card className="p-8 bg-gradient-to-br from-primary/5 to-transparent" data-testid="card-join">
-                <h3 className="text-2xl font-bold mb-4">Join GSN</h3>
-                <p className="text-muted-foreground mb-6">
-                  Become part of our international community and help make science accessible to everyone.
-                </p>
-                <Button size="lg" className="w-full mb-4" data-testid="button-join-now">Join Now</Button>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Mail className="w-4 h-4" />
-                  <span>info@globalsciencenavigators.org</span>
-                </div>
+            {/* Contact and Social */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="p-8" data-testid="card-contact-form">
+                <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
+                <form className="space-y-4">
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Name</label>
+                    <Input placeholder="Your name" data-testid="input-name" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Email</label>
+                    <Input type="email" placeholder="your@email.com" data-testid="input-email" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Message</label>
+                    <Textarea placeholder="Tell us how you'd like to get involved..." rows={4} data-testid="textarea-message" />
+                  </div>
+                  <Button className="w-full" data-testid="button-submit-contact">Send Message</Button>
+                </form>
               </Card>
 
-              <Card className="p-8" data-testid="card-social">
-                <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" data-testid="button-social-twitter">Twitter</Button>
-                  <Button variant="outline" size="sm" data-testid="button-social-facebook">Facebook</Button>
-                  <Button variant="outline" size="sm" data-testid="button-social-linkedin">LinkedIn</Button>
-                </div>
-              </Card>
+              <div className="space-y-6">
+                <Card className="p-8 bg-gradient-to-br from-primary/5 to-transparent" data-testid="card-join">
+                  <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Questions? Reach out to us via email or connect with us on social media.
+                  </p>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                    <Mail className="w-4 h-4" />
+                    <span>info@globalsciencenavigators.org</span>
+                  </div>
+                </Card>
+
+                <Card className="p-8" data-testid="card-social">
+                  <h3 className="text-xl font-bold mb-4">Follow Nepal Navigators</h3>
+                  <a 
+                    href="https://www.instagram.com/nepalnavigators"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="link-instagram-nepal"
+                  >
+                    <Button variant="outline" className="w-full gap-2 justify-center" data-testid="button-instagram-nepal">
+                      <Instagram className="w-4 h-4" />
+                      @nepalnavigators
+                    </Button>
+                  </a>
+                  <p className="text-xs text-muted-foreground mt-3 text-center">
+                    Follow for updates, events, and inspiring science content!
+                  </p>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
