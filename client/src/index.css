@@ -61,62 +61,63 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  --background: 220 25% 98%;
-  --foreground: 220 15% 15%;
-  --border: 220 15% 88%;
-  --card: 0 0% 100%;
-  --card-foreground: 220 15% 15%;
-  --card-border: 220 15% 92%;
+  /* Cream/Beige theme inspired by logo */
+  --background: 35 25% 92%;
+  --foreground: 210 35% 18%;
+  --border: 35 20% 82%;
+  --card: 0 0% 98%;
+  --card-foreground: 210 35% 18%;
+  --card-border: 35 15% 87%;
   
-  --sidebar: 220 20% 97%;
-  --sidebar-foreground: 220 15% 20%;
-  --sidebar-border: 220 15% 88%;
-  --sidebar-primary: 217 91% 60%;
+  --sidebar: 35 20% 90%;
+  --sidebar-foreground: 210 35% 20%;
+  --sidebar-border: 35 20% 80%;
+  --sidebar-primary: 210 70% 30%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 220 20% 93%;
-  --sidebar-accent-foreground: 220 15% 20%;
-  --sidebar-ring: 217 91% 60%;
+  --sidebar-accent: 35 20% 85%;
+  --sidebar-accent-foreground: 210 35% 25%;
+  --sidebar-ring: 210 70% 30%;
   
-  --popover: 0 0% 100%;
-  --popover-foreground: 220 15% 15%;
-  --popover-border: 220 15% 88%;
+  --popover: 0 0% 99%;
+  --popover-foreground: 210 35% 18%;
+  --popover-border: 35 15% 85%;
   
-  --primary: 217 91% 60%;
+  --primary: 210 70% 30%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 220 20% 95%;
-  --secondary-foreground: 220 15% 20%;
+  --secondary: 35 20% 88%;
+  --secondary-foreground: 210 35% 25%;
   
-  --muted: 220 20% 96%;
-  --muted-foreground: 220 10% 45%;
+  --muted: 35 18% 90%;
+  --muted-foreground: 210 15% 50%;
   
-  --accent: 210 100% 95%;
-  --accent-foreground: 217 91% 40%;
+  --accent: 210 100% 92%;
+  --accent-foreground: 210 70% 25%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
   
-  --input: 220 15% 85%;
-  --ring: 217 91% 60%;
+  --input: 35 18% 85%;
+  --ring: 210 70% 30%;
   
-  --chart-1: 217 91% 60%;
-  --chart-2: 185 84% 50%;
-  --chart-3: 142 76% 45%;
+  --chart-1: 210 70% 30%;
+  --chart-2: 210 65% 50%;
+  --chart-3: 30 80% 55%;
   --chart-4: 45 93% 58%;
-  --chart-5: 27 87% 60%;
+  --chart-5: 210 60% 40%;
 
   --font-sans: 'Inter', sans-serif;
   --font-display: 'Space Grotesk', sans-serif;
   --radius: .75rem;
   
-  --shadow-2xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  --shadow-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
-  --shadow-sm: 0px 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0px 6px 8px -2px rgba(0, 0, 0, 0.05), 0px 12px 16px -4px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --shadow-2xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-2xs: 0px 1px 2px 0px rgba(31, 41, 55, 0.05);
+  --shadow-xs: 0px 1px 3px 0px rgba(31, 41, 55, 0.1);
+  --shadow-sm: 0px 2px 4px -1px rgba(31, 41, 55, 0.06), 0px 4px 6px -1px rgba(31, 41, 55, 0.1);
+  --shadow: 0px 4px 6px -2px rgba(31, 41, 55, 0.05), 0px 10px 15px -3px rgba(31, 41, 55, 0.1);
+  --shadow-md: 0px 6px 8px -2px rgba(31, 41, 55, 0.05), 0px 12px 16px -4px rgba(31, 41, 55, 0.1);
+  --shadow-lg: 0px 10px 15px -3px rgba(31, 41, 55, 0.1), 0px 20px 25px -5px rgba(31, 41, 55, 0.1);
+  --shadow-xl: 0px 20px 25px -5px rgba(31, 41, 55, 0.1), 0px 25px 50px -12px rgba(31, 41, 55, 0.25);
+  --shadow-2xl: 0px 25px 50px -12px rgba(31, 41, 55, 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 
@@ -143,49 +144,49 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 220 25% 8%;
-  --foreground: 220 10% 95%;
-  --border: 220 15% 18%;
-  --card: 220 20% 10%;
-  --card-foreground: 220 10% 95%;
-  --card-border: 220 15% 15%;
+  --background: 210 35% 15%;
+  --foreground: 35 25% 90%;
+  --border: 210 30% 25%;
+  --card: 210 35% 13%;
+  --card-foreground: 35 25% 92%;
+  --card-border: 210 30% 22%;
   
-  --sidebar: 220 20% 9%;
-  --sidebar-foreground: 220 10% 90%;
-  --sidebar-border: 220 15% 18%;
-  --sidebar-primary: 217 91% 60%;
-  --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 220 20% 15%;
-  --sidebar-accent-foreground: 220 10% 90%;
-  --sidebar-ring: 217 91% 60%;
+  --sidebar: 210 35% 14%;
+  --sidebar-foreground: 35 25% 88%;
+  --sidebar-border: 210 30% 24%;
+  --sidebar-primary: 210 70% 60%;
+  --sidebar-primary-foreground: 210 35% 10%;
+  --sidebar-accent: 210 30% 20%;
+  --sidebar-accent-foreground: 35 25% 85%;
+  --sidebar-ring: 210 70% 60%;
   
-  --popover: 220 20% 10%;
-  --popover-foreground: 220 10% 95%;
-  --popover-border: 220 15% 18%;
+  --popover: 210 35% 13%;
+  --popover-foreground: 35 25% 90%;
+  --popover-border: 210 30% 23%;
   
-  --primary: 217 91% 60%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 210 70% 60%;
+  --primary-foreground: 210 35% 10%;
   
-  --secondary: 220 20% 15%;
-  --secondary-foreground: 220 10% 90%;
+  --secondary: 210 30% 20%;
+  --secondary-foreground: 35 25% 85%;
   
-  --muted: 220 20% 14%;
-  --muted-foreground: 220 10% 60%;
+  --muted: 210 30% 19%;
+  --muted-foreground: 35 15% 60%;
   
-  --accent: 217 91% 20%;
-  --accent-foreground: 217 91% 70%;
+  --accent: 210 70% 25%;
+  --accent-foreground: 210 70% 70%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
   
-  --input: 220 15% 25%;
-  --ring: 217 91% 60%;
+  --input: 210 30% 28%;
+  --ring: 210 70% 60%;
   
-  --chart-1: 217 91% 60%;
-  --chart-2: 185 84% 50%;
-  --chart-3: 142 76% 45%;
+  --chart-1: 210 70% 60%;
+  --chart-2: 210 65% 50%;
+  --chart-3: 30 80% 55%;
   --chart-4: 45 93% 58%;
-  --chart-5: 27 87% 60%;
+  --chart-5: 210 60% 50%;
 
   --shadow-2xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   --shadow-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
@@ -280,7 +281,7 @@
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--chart-2)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--chart-3)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
