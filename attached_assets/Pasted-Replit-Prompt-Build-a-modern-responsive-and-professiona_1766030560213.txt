@@ -1,0 +1,123 @@
+Replit Prompt
+
+> Build a modern, responsive, and professional international club website for Global Science Navigators (GSN).
+
+About GSN:
+Global Science Navigators (GSN) is an international science outreach club currently active in 4 countries: Nepal, Vietnam, Myanmar, and Thailand. GSN’s mission is to make science accessible, inclusive, and engaging for everyone, regardless of background.
+
+The organization focuses on:
+
+Science communication
+
+Public outreach
+
+Inclusion & accessibility
+
+Student-led international collaboration
+
+
+Major Highlight:
+GSN is currently organizing a science podcast featuring Nobel Prize winner Takaaki Kajita, scheduled for March 24. This should be clearly highlighted on the homepage as a featured event.
+
+
+Website Structure & Sections
+
+1. Home Page
+
+Hero section with:
+
+GSN logo (placeholder)
+
+Tagline (example: “Navigating Science Beyond Borders”)
+
+Brief mission statement
+
+
+Featured event banner for:
+
+Podcast with Nobel Laureate Takaaki Kajita – March 24
+
+Call-to-action button: “Learn More” or “Watch / Register”
+
+
+
+2. About GSN (Global Section)
+
+What Global Science Navigators is
+
+Vision & mission
+
+Core values: outreach, inclusion, collaboration
+
+Explanation of how national branches work under one global network
+
+
+3. National Chapters (Segmented Blocks) Create separate, visually distinct sections or cards for each country:
+
+Nepal Science Navigators
+
+Vietnam Science Navigators
+
+Myanmar Science Navigators
+
+Thailand Science Navigators
+
+
+Each national block should include:
+
+Country name and flag icon
+
+Short description of that chapter’s role in science outreach
+
+Focus on inclusion and local coordination
+
+Placeholder buttons:
+
+“View Team”
+
+“Local Activities”
+
+
+
+4. Events & Programs
+
+Dedicated section for:
+
+Nobel Prize Podcast (primary)
+
+Future science talks, workshops, and outreach programs
+
+
+
+5. Inclusion & Outreach
+
+Explain how GSN ensures science reaches underrepresented and diverse communities
+
+Emphasis on student leadership and accessibility
+
+
+6. Contact / Join Us
+
+Contact form
+
+Email placeholder
+
+Social media placeholders
+
+“Join GSN” call-to-action
+
+
+Design & Technical Requirements
+
+Clean, modern, academic-professional design
+
+Mobile-friendly and responsive
+
+Use neutral colors with science-inspired accents (blue, white, subtle gradients)
+
+Easy to expand later as more countries join
+
+Use reusable components for country sections
+
+
+Build this as a scalable website so additional national chapters and events can be added easily in the future.
