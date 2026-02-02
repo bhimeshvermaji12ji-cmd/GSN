@@ -1,4 +1,4 @@
-# Frontend-only build
+# GSN
 
 This project is configured as a frontend-only Vite React app.
 
