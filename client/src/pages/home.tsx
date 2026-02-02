@@ -60,7 +60,7 @@ export default function Home() {
               <a href="#chapters" className="text-sm font-medium hover:text-primary transition-colors" data-testid="link-chapters">Chapters</a>
               <a href="#events" className="text-sm font-medium hover:text-primary transition-colors" data-testid="link-events">Events</a>
               <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors" data-testid="link-contact">Contact</a>
-              <Button size="sm" data-testid="button-join">Join GSN</Button>
+              <a href= "#contact"> <Button size="sm" data-testid="button-join">Join GSN</Button> </a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Home() {
             Beyond Borders
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8" data-testid="text-hero-description">
-            Making science accessible, inclusive, and engaging for everyone across Nepal, Vietnam, Myanmar, and Thailand through student-led international collaboration.
+            Making science accessible, inclusive, and engaging for everyone across the Globet through student-led international collaboration.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="gap-2" data-testid="button-learn-more">
@@ -112,7 +112,7 @@ export default function Home() {
               <div className="flex items-center gap-4 text-sm opacity-90">
                 <div className="flex items-center gap-2" data-testid="text-event-date">
                   <Calendar className="w-4 h-4" />
-                  March 24, 2025
+                  March 24, 2026
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <Card className="p-8 sm:p-12 bg-gradient-to-br from-accent/30 to-primary/5 border-2" data-testid="card-mission">
+          <Card className="p-8 sm:p-12 bg-linear-to-br from-accent/30 to-primary/5 border-2" data-testid="card-mission">
             <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
             <p className="text-lg text-foreground/80 leading-relaxed mb-4">
               Global Science Navigators (GSN) operates as a unified international network with national chapters across four countries. Each chapter works autonomously while contributing to our shared vision of democratizing science education.
@@ -243,7 +243,7 @@ export default function Home() {
               </p>
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
                 <Calendar className="w-4 h-4" />
-                <span>March 24, 2025</span>
+                <span>March 24, 2026</span>
               </div>
               <Button data-testid="button-register-podcast">Register for Podcast</Button>
             </Card>
