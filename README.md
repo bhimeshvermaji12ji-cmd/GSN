@@ -22,8 +22,3 @@ Build for production:
 npm run build
 npm run preview
 ```
-
-Notes
-
-- Replit-specific plugins and references were removed to make the project independent from Replit.
-- If you want meta image tags to point to a hosted URL, set `META_IMAGE_BASE_URL` or `PUBLIC_URL` (no trailing slash).
